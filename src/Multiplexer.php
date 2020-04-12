@@ -31,18 +31,6 @@ class Multiplexer
     }
 
     /**
-     * Get the multiplexer command
-     *
-     * @param string $name
-     * @param mixed ...$arguments
-     * @return mixed
-     */
-    public function getCommand(string $name, ...$arguments)
-    {
-        return $this->driver->$name(...$arguments);
-    }
-
-    /**
      * Pass through to the driver
      *
      * @param string $name
@@ -51,6 +39,6 @@ class Multiplexer
      */
     public function __call(string $name, $arguments)
     {
-        return Shell::execute($this->getCommand($name, ...$arguments));
+        return Shell::execute($this->driver->{$name}(...$arguments));
     }
 }
