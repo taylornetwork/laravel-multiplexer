@@ -1,0 +1,30 @@
+{
+    "name": "taylornetwork/laravel-multiplexer",
+    "require": {
+        "php": ">=7.3",
+        "illuminate/support": "^7.5",
+        "taylornetwork/laravel-shell": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Taylor",
+            "email": "sam@taylornetwork.ca"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TaylorNetwork\\Multiplexer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
