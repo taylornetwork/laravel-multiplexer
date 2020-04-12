@@ -23,7 +23,7 @@
                 "TaylorNetwork\\Multiplexer\\MultiplexerServiceProvider"
             ],
             "aliases": {
-                "Multiplexer": "TaylorNetwork\\Multiplexer\\Facades\\MultiplexerFacade"
+                "Multiplexer": "TaylorNetwork\\Multiplexer\\Facades\\Multiplexer"
             }
         }
     }

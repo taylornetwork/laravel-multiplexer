@@ -41,4 +41,16 @@ class Multiplexer
     {
         return Shell::execute($this->driver->{$name}(...$arguments));
     }
+
+    /**
+     * Pass through to the driver
+     *
+     * @param string $name
+     * @param mixed $arguments
+     * @return mixed
+     */
+    public static function __callStatic(string $name, $arguments)
+    {
+        return (new static)->{$name}(...$arguments);
+    }
 }

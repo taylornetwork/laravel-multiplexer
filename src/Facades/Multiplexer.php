@@ -6,7 +6,7 @@ namespace TaylorNetwork\Multiplexer\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class MultiplexerFacade extends Facade
+class Multiplexer extends Facade
 {
     public static function getFacadeAccessor()
     {
