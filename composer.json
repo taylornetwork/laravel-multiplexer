@@ -20,10 +20,10 @@
     "extra": {
         "laravel": {
             "providers": [
-
+                "TaylorNetwork\\Multiplexer\\MultiplexerServiceProvider"
             ],
             "aliases": {
-
+                "Multiplexer": "TaylorNetwork\\Multiplexer\\Facades\\MultiplexerFacade"
             }
         }
     }
