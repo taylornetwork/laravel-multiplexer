@@ -27,7 +27,7 @@ abstract class Multiplexer implements MultiplexerContract
      */
     public function __construct()
     {
-        $this->commands = array_merge($this->commands, Config::get('multiplexer.commands.'.$this->getDriverName()), []);
+        $this->commands = array_merge($this->commands, Config::get('multiplexer.commands.'.$this->getDriverName(), []));
     }
 
     /**
