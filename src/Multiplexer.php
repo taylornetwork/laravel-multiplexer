@@ -39,7 +39,7 @@ class Multiplexer
      */
     public function __call(string $name, $arguments)
     {
-        return Shell::execute($this->driver->{$name}(...$arguments));
+        return Shell::command($this->driver->{$name}(...$arguments));
     }
 
     /**
